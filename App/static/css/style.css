@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hover-color: #00DCDC;
+    --teal: #008080;
+    --bg-primary: #00AEAE;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    background-color: var(--bg-primary);
+}
+
+.container {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container>h3 {
+    text-align: center;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+.home-container>form {
+    width: 50%;
+    margin-top: 20px;
+    padding: 16px;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 0px #2f2f2f;
+}
+
+.username-container {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.username-container>label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.username-container>input {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+.join {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.join>input {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.join>button {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    margin-top: 8px;
+    background-color: var(--hover-color);
+}
+
+.join>button:hover {
+    background-color: var(--teal);
+    box-shadow: 0px 0px 3px 0px #282727;
+}
+
+
+.create-btn>button {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    margin-top: 8px;
+    background-color: var(--hover-color);
+}
+
+.create-btn>button:hover {
+    background-color: var(--teal);
+    box-shadow: 0px 0px 3px 0px #282727;
+}
+
+.Or-class {
+    text-align: center;
+}
+
+
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid black; */
+    align-items: center;
+    padding: 10px;
+    margin-top: 10%;
+    font-size: large;
+    width: 50%;
+
+}
+
+.code {
+    font-size: 24px;
+}
+
+.message {
+    border: 0;
+    min-height: 70vh;
+    padding: 16px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    background-image: url('../img/wabg.png');
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+.chat {
+    color: white;
+    background-color: rgba(32, 32, 32, 0.8);
+    padding: 15px;
+    padding-left: 16px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.chat-user {
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+.chat-message {
+    margin-left: 15%;
+}
+
+.send_message {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.send_message>input {
+    line-height: 1.4em;
+    padding: 5px;
+    width: 70%;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.send_message>button {
+    width: 20%;
+    margin: auto;
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: #167D7F;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 1.2em;
+}
+
+.send_message>button:hover {
+    background-color: var(--hover-color);
+}
+
+.send_message>button:active {
+    background-color: #98D7C2;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 756px) {
+    .username-container {
+        width: 100%;
+    }
+
+    .join {
+        width: 100%;
+    }
+
+    .join>button {
+        width: 100%;
+    }
+    .chat-container{
+        width: 100%;
+    }
+    .send_message > button{
+        width: 100%;
+    }
+}
